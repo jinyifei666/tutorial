@@ -215,7 +215,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.sina.com'                   #SMTP地址
 EMAIL_PORT='587'
 EMAIL_HOST_USER='jinyifei1020@sina.com'
-EMAIL_HOST_PASSWORD='941020'
+EMAIL_HOST_PASSWORD='******'
 EMAIL_USE_TLS=True
 DEFAULT_FROM_EMAIL='jinyifei1020@sina.com'
 #管理员站点
@@ -225,6 +225,7 @@ SERVER_EMAIL = 'jinyifei1020@sina.com'
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static/'
 
 app_key = u'a66fed1923c9c82b2db79db7'
 master_secret = u'6ca581e3da795f787a872051'
