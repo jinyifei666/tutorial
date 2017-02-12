@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网盘搜索</title>
+</head>
+<body>
+    <form method='post'>
+    {% csrf_token %}
+{#    {{ form }}{# 直接用form各部分虽然都出来了，，但是未换行,甚至会显示表单内容用lable表示，也有默认值 #}
+        汉字：{{ form.key }}<br>
+    <input type="submit" value="提交">
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>推送界面</title>
+</head>
+<body>
+<form action="{% url 'push' %}" method="post">{% csrf_token %}
+<select name="type">
+<option value="1">发送通知</option>
+<option value="2">发送消息</option>
+</select><br>
+<table>
+<tr>
+    {{title}}:<input type="text" name="title"><br>
+</tr>
+<tr>
+    {{content}}:<input type="text" name="content"><br>
+</tr>
+</table>
+<input type="submit" value="点击发送" />
+</form>
+
+</body>
+</html>
